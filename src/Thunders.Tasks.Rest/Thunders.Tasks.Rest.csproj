@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <UserSecretsId>9909da57-1f99-44eb-a3fd-197fb313fb67</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ErrorOr" Version="2.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Thunders.Tasks.Application\Thunders.Tasks.Application.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.Core\Thunders.Tasks.Core.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.Infra\Thunders.Tasks.Infra.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.Services\Thunders.Tasks.Services.csproj" />
+  </ItemGroup>
+
+</Project>
