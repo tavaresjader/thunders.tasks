@@ -13,7 +13,7 @@ namespace Thunders.Tasks.Tests
         public static int ID_INVALID = -1;
         public static string TEXT_VALID = "Text Valid";
         public static string TEXT_EMPTY = "";
-        public static DateTime DATETIME_VALID = DateTime.Now;
+        public static DateTime DATETIME_VALID = DateTime.Now.Date;
         public static DateTime DATETIME_INVALID = DateTime.MinValue;
         public static DateTime? DATETIME_EMPTY = null;
     }

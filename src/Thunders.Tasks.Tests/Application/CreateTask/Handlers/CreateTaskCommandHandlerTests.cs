@@ -34,6 +34,8 @@ namespace Thunders.Tasks.Tests.Application.CreateTask.Handlers
         [Fact]
         public async Task CreateTaskCommandHandlerTests_Should_Ok()
         {
+            _taskService.CreateAsync(Arg.Any<TaskDto>(), _cancellationTokenSource.Token).Returns(1);
+
             var request = new CreateTaskCommandRequestBuilder().Build();
 
             var result = await _handler.Handle(request, _cancellationTokenSource.Token);
@@ -69,6 +71,8 @@ namespace Thunders.Tasks.Tests.Application.CreateTask.Handlers
         [Fact]
         public async Task CreateTaskCommandHandlerTests_Description_Empty_Should_Ok()
         {
+            _taskService.CreateAsync(Arg.Any<TaskDto>(), _cancellationTokenSource.Token).Returns(1);
+
             var request = new CreateTaskCommandRequestBuilder()
                 .WithDescription(GeneralDataBuilder.TEXT_EMPTY)
                 .Build();
@@ -129,6 +133,8 @@ namespace Thunders.Tasks.Tests.Application.CreateTask.Handlers
         [Fact]
         public async Task CreateTaskCommandHandlerTests_EstimateEndDate_Empty_Should_Ok()
         {
+            _taskService.CreateAsync(Arg.Any<TaskDto>(), _cancellationTokenSource.Token).Returns(1);
+
             var request = new CreateTaskCommandRequestBuilder()
                 .WithEstimateEndDate(GeneralDataBuilder.DATETIME_EMPTY)
                 .Build();
