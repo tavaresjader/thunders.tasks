@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Thunders.Tasks.Application.UpdateTask.Validators;
-using Thunders.Tasks.Tests.Builders;
+﻿using Thunders.Tasks.Application.UpdateTask.Validators;
 using Thunders.Tasks.Tests.Builders.Application;
 
 namespace Thunders.Tasks.Tests.Application.UpdateTask.Validators

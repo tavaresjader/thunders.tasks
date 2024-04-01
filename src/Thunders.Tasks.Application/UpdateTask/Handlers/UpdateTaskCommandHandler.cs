@@ -47,6 +47,9 @@ namespace Thunders.Tasks.Application.UpdateTask.Handlers
                 if (updateTaskResult.IsError)
                     return updateTaskResult.Errors;
 
+                if (updateTaskResult.Value is false)
+                    return Error.Failure("", $"Task {request.Id} Failure at Update");
+
                 _logger.LogInformation($"Handler {HANDLER_NAME} finished");
 
                 return UpdateTaskBuilder.Build();

@@ -13,10 +13,10 @@ namespace Thunders.Tasks.Application.GetTaskById.Handlers
     public class GetTaskByIdQueryHandler : IRequestHandler<GetTaskByIdQueryRequest, ErrorOr<GetTaskByIdQueryResponse>>
     {
         private readonly ITaskService _taskService;
-        private readonly ILogger<UpdateTaskCommandHandler> _logger;
+        private readonly ILogger<GetTaskByIdQueryHandler> _logger;
         private const string HANDLER_NAME = nameof(GetTaskByIdQueryHandler);
 
-        public GetTaskByIdQueryHandler(ITaskService taskService, ILogger<UpdateTaskCommandHandler> logger)
+        public GetTaskByIdQueryHandler(ITaskService taskService, ILogger<GetTaskByIdQueryHandler> logger)
         {
             _taskService = taskService;
             _logger = logger;

@@ -29,15 +29,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\GetTaskById\Handlers\" />
-    <Folder Include="Application\GetTaskById\Validators\" />
-    <Folder Include="Application\UpdateTask\Handlers\" />
-    <Folder Include="Infra\Contexts\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Thunders.Tasks.Application\Thunders.Tasks.Application.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.Core\Thunders.Tasks.Core.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.Infra\Thunders.Tasks.Infra.csproj" />
+    <ProjectReference Include="..\Thunders.Tasks.Services\Thunders.Tasks.Services.csproj" />
   </ItemGroup>
 
 </Project>
