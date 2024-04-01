@@ -44,6 +44,5 @@ namespace Thunders.Tasks.Tests.Application.DeleteTaskById.Validators
 
             Assert.False(validator.IsValid);
         }
-
     }
 }

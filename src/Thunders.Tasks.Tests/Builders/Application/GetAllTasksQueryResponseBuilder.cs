@@ -24,7 +24,7 @@ namespace Thunders.Tasks.Tests.Builders.Application
             Title = GeneralDataBuilder.TEXT_VALID;
             Description = GeneralDataBuilder.TEXT_VALID;
             EstimateStartDate = GeneralDataBuilder.DATETIME_VALID;
-            EstimateEndDate = GeneralDataBuilder.DATETIME_VALID.AddDays(1);
+            EstimateEndDate = GeneralDataBuilder.DATETIME_VALID;
             CreatedAt = GeneralDataBuilder.DATETIME_VALID;
             UpdatedAt = GeneralDataBuilder.DATETIME_VALID;
         }
